@@ -5,65 +5,144 @@
     <title>Эльбрус Кино</title>
 </head>
 <link rel="stylesheet" href="css/index.css">
+
 <body style="background: #000000ea; color: #FFBC5B; font-family: 'IBM Plex Mono', monospace;">
+    
     <header class="header_of_web">
-        <div class="fbox">
+
+        <div class="flexbox">
+
         <div class="logo">
-            <img src="img/logo-elbrus.png"
+            <img src="img/logo-elbrus.png">
         </div>
-        <div class="">Мое кино</div>
-        <div class="">Магазин</div>
-        <div class="">Покупки</div>
+
+        <div class="container">
+        <div class="mini-cont">Мое кино</div>
+        <div class="mini-cont">Магазин</div>
+        <div class="mini-cont">Покупки</div>
         <div class="search">
             <img src="img/free-icon-magnifying-glass-2811806.png" alt="Значок поиска">
         </div>
-        <div class="profile">
-            <img src="my-photo.jpeg" alt="">
         </div>
+        <div class="profile">
+            <img src="my-photo.jpeg" alt="" class="image-profile">
+        </div>
+        </div>
+        </header>
+     <h2 class="heading">Рекомендуем посмотреть</h2>
+<div class="flexity">
+    <div>
+        <img src="img/zveropolis.jpg" width="100px" class="zverek">
     </div>
-    </header>
-    <h2 class="heading">Рекомендуем посмотреть</h2>
+    
+    <div>
+        <img src="img/starWars.jpg" width="100px" class="starwrs">
+    </div>
+    
+    <div>
+        <img src="img/mulan.jpeg" width="100px" class="mulan">
+    </div>
+    
+</div>
+</div>
+
+<div class="new-div">
     <a href="#">
-        <span class="first">Зверополис</span>
-        <span class="second">2019, мультфильм</span>
+        <div class="first">Зверополис</div>
+        <br>
+        <div class="second">2019, мультфильм</div>
     </a>
     <a href="#">
-        <span class="first">Звездные войны</span>
-        <span class="second">2010, фэнтези</span>
+        <div class="first">Звездные войны</div>
+        <!-- <br> -->
+        <div class="second">2010, фэнтези</div>
     </a>
     <a href="#">
-        <span class="first">Мулан</span>
-        <span class="second">2021, мультфильм</span>
+        <div class="first">Мулан</div>
+        <!-- <br> -->
+    <div class="second">2021, мультфильм</div>
     </a>
+</div>
 
     <h2 class="heading">Новое в подписке</h2>
+
+<div class="mainer">
+
+<div>
+    <img src="https://cs8.pikabu.ru/post_img/big/2016/11/26/8/1480164192121662827.jpg" class="asassin">
+</div>
+
+
+<div>
+    <img src="https://avatars.mds.yandex.net/get-znatoki/1548967/2a0000016cc241be5ba3b55cc281e4c2fa14/orig" class="inter">
+</div>
+
+</div>
+
+<div class="submainer">
+    <a href="#" class="asas">
+    <div class="first">Асассин</div>
+    <div class="second">2023, фентэзи</div>
+
     <a href="#">
-        <span class="first">Доктор Стрэндж</span>
-        <span class="second">2018, фэнтези</span>
+    <div class="first">Интерстеллар</div>
+    <div class="second">2020, фентэзи</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="main-1">
+<div>
+    <img src="img/doctorStrange.jpg" width="100px">
+</div>
+
+<div>
+    <img src="img/bryklin.jpg" width="100px">
+</div> 
+
+<div>
+    <img src="img/minions.jpg" width="100px">
+</div>
+</div>  -->
+
+
+
+<!-- <div class="main-2">
+    <a href="#">
+        <div class="first">Доктор Стрэндж</div>
+        <div class="second">2018, фэнтези</div>
     </a>
     <a href="#">
-        <span class="first">Бруклин</span>
-        <span class="second">2012, боевик</span>
+        <div class="first">Бруклин</div>
+        <div class="second">2012, боевик</div>
     </a>
     <a href="#">
-        <span class="first">Миньоны</span>
-        <span class="second">2020, мультфильм</span>
-    </a>
+        <div class="first">Миньоны</div>
+        <div class="second">2020, мультфильм</div>
+    </a> -->
+</div>  
 </body>
 </html>
+
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 .header_of_web {
     width: 100%;
     height: 80px;
     background: #4520AB; 
-    /* position: absolute;
-    /* width: 1280px;
-    height: 80px; */
-    /* left: 0px;
-    top: 0px; */ */
-}
-.fbox div{
+}    
+.flexbox div{
     display: flex;
     margin-left: 30px;
 }
@@ -73,22 +152,81 @@ a {
 
 .first {
 color: #989898;
+
 }
 .second {
     color: #515151;
 }
 
 .logo {
+    position: relative;
+    left: 60px;
+    top: 15px;
     
 }
    
-.search {
-    width: 15px;
-    height: 30px;
-}
 .profile {
     width: 30px;
     height: 50px;
     /* border-radius: 50%;
     border: 5px solid white; */
+}
+.container {
+    position: relative;
+    left: 600px;
+    top: -20px;
+    padding-left: 65px;
+    
+}
+.profile {
+    position: relative;
+    left: 90%;
+    top: -60px;
+    
+}
+.image-profile {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.search {
+    width: 15px;
+    height: 30px;
+}
+.flexity {
+    display: flex;
+    justify-content: space-around;
+}
+.flexity img {
+    width: 322px;
+}
+.new-div {
+    display: flex;
+    justify-content: space-around;
+}
+.starwrs {
+    padding-right: 70px;
+
+} 
+.mulan {
+    padding-right: 70px;
+} 
+
+.asassin {
+    height: 200px;
+    padding-right: 500px;
+}
+.inter {
+    height: 200px;
+    
+}
+.mainer {
+    display: flex;
+    justify-content: center;
+}
+.submainer {
+    display: flex;
+    justify-content: center;
+}
+.asas {
+    padding-right: 700px;
 }
